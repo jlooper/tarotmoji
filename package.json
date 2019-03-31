@@ -1,0 +1,64 @@
+{
+    "description": "NativeScript Application",
+    "license": "SEE LICENSE IN <your-license-filename>",
+    "readme": "NativeScript Application",
+    "repository": "<fill-your-repository-here>",
+    "nativescript": {
+        "id": "org.nativescript.playvue",
+        "tns-android": {
+            "version": "5.2.0"
+        },
+        "tns-ios": {
+            "version": "5.2.0"
+        }
+    },
+    "dependencies": {
+        "@progress-nativechat/nativescript-nativechat": "2.0.3",
+        "kinvey-nativescript-sdk": "3.12.3",
+        "nativescript-accelerometer": "2.0.1",
+        "nativescript-background-http": "3.3.1",
+        "nativescript-camera": "4.1.1",
+        "nativescript-fresco": "5.2.0",
+        "nativescript-geolocation": "4.4.2",
+        "nativescript-imagepicker": "6.0.6",
+        "nativescript-intl": "3.0.0",
+        "nativescript-iqkeyboardmanager": "1.4.0",
+        "nativescript-social-share": "1.5.1",
+        "nativescript-theme-core": "1.0.4",
+        "nativescript-ui-autocomplete": "3.11.0",
+        "nativescript-ui-calendar": "3.10.0",
+        "nativescript-ui-chart": "3.11.1",
+        "nativescript-ui-dataform": "3.10.0",
+        "nativescript-ui-gauge": "3.8.0",
+        "nativescript-ui-listview": "5.1.1",
+        "nativescript-ui-sidedrawer": "5.1.0",
+        "nativescript-vue": "2.0.2",
+        "tns-core-modules": "5.2.0",
+        "nativescript-vue-devtools": "1.1.0",
+        "nativescript-toast": "1.4.6"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.0.0",
+        "@babel/preset-env": "^7.0.0",
+        "babel-loader": "^8.0.2",
+        "babel-traverse": "6.26.0",
+        "babel-types": "6.26.0",
+        "babylon": "6.18.0",
+        "clean-webpack-plugin": "^0.1.19",
+        "copy-webpack-plugin": "^4.5.2",
+        "css-hot-loader": "^1.4.2",
+        "css-loader": "^1.0.0",
+        "lazy": "1.0.11",
+        "mini-css-extract-plugin": "^0.4.1",
+        "nativescript-dev-webpack": "0.20.0",
+        "nativescript-vue-template-compiler": "^2.0.0-alpha.3",
+        "nativescript-worker-loader": "~0.9.0",
+        "node-sass": "^4.9.2",
+        "sass-loader": "^7.1.0",
+        "uglifyjs-webpack-plugin": "~1.2.7",
+        "vue-loader": "^15.2.6",
+        "webpack": "^4.16.4",
+        "webpack-bundle-analyzer": "~2.13.1",
+        "webpack-cli": "^3.1.0"
+    }
+}

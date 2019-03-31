@@ -1,0 +1,108 @@
+
+.page {
+  color: #FFF;
+  background: linear-gradient(to right top, #2C163D, #142237);
+}
+
+.fa {
+  font-family: FontAwesome, fontawesome-webfont;
+  color: #FFF;
+}
+
+.header {
+    font-size: 50;
+    padding: 20;
+    text-align:center;
+}
+
+.title {
+  text-align: center; 
+  text-transform: uppercase;
+  margin-top: 20;
+  font-family: NunitoSans-Bold, Nunito;
+  font-size: 18;
+  font-weight: bold;
+  color: #D3DBEA;
+}
+
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #0F1E39;
+  font-family: Passion, PassionOne, PassionOne-Regular;
+  font-size: 30;
+}
+
+.med {
+    font-size: 18;
+}
+
+.lg {
+    font-size: 24;
+}
+
+.nav-btn {
+    color: white;
+    margin: 20;
+    font-size: 40;
+}
+
+.card {
+	border-radius: 20;
+	margin: 12;
+    padding: 10;
+	background-color: #E3E9F8;
+    color: #131636;
+    height: 86%;
+}
+
+.modal {
+    height: 70%;
+}
+
+.emoji {
+	text-align: center;
+	padding: 10;
+	font-size: 100;
+	color: #333333;
+    border-color: black;
+    text-shadow: 0 0 3px 0 rgb(1, 0, 0);
+}
+.reversed {
+	transform: rotate(180deg);
+}
+.lab {
+    margin-left: 10;
+}
+
+.list-item {
+        margin: 3;
+        padding: 5, 12;
+        color: black;
+        background-color: #E3E9F8;
+        font-size: 22;
+        border-radius: 10;
+    }
+
+    .list-item-name {
+        font-size: 22;
+        font-family: Passion, PassionOne, PassionOne-Regular;
+    }
+
+    .list-item-meaning {
+        font-size: 15;
+        font-family: Nunito, NunitoSans, NunitoSans-Regular;
+        color: #131636;
+
+    }
+
+    
+.close {
+    font-size: 25;
+    color: #131636;
+}
+ .emoji_window {
+        height: 80;
+        width: 80;
+        margin-bottom: 20;
+    }

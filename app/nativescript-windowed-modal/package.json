@@ -1,0 +1,56 @@
+{
+    "name": "nativescript-windowed-modal",
+    "version": "5.0.6",
+    "description": "Consistent modals for Android and iOS.",
+    "main": "index",
+    "typings": "index.d.ts",
+    "nativescript": {
+        "platforms": {
+            "android": "5.0.0",
+            "ios": "5.0.0"
+        }
+    },
+    "scripts": {
+        "tsc": "tsc",
+        "plugin.tscwatch": "npm run tsc -- -w",
+        "demo.ios": "npm run tsc && cd ../demo && tns run ios --syncAllFiles --emulator",
+        "demo.android": "npm run tsc && cd ../demo && tns run android --syncAllFiles --emulator",
+        "demo.reset": "cd ../demo && npx rimraf -- hooks node_modules platforms",
+        "plugin.prepare": "npm run tsc && cd ../demo && tns plugin remove nativescript-windowed-modal && tns plugin add ../src",
+        "ci.install": "cd .. && git clean -dfx && cd src && npm ci && cd ../demo && npm ci",
+        "ci.tslint": "npm run ci.install && tslint './**/*.ts' --config '../tslint.json' --exclude './**/node_modules/**'"
+    },
+    "keywords": [
+        "NativeScript",
+        "JavaScript",
+        "Typescript",
+        "Android",
+        "iOS",
+        "Modal"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mukaschultze/nativescript-windowed-modal"
+    },
+    "author": {
+        "name": "Samuel Schultze",
+        "email": "samuelschultze@gmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/mukaschultze/nativescript-windowed-modal/issues"
+    },
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/mukaschultze/nativescript-windowed-modal",
+    "readmeFilename": "README.md",
+    "devDependencies": {
+        "prompt": "^1.0.0",
+        "rimraf": "^2.6.3",
+        "semver": "^5.5.0",
+        "tns-core-modules": "^5.1.2",
+        "tns-platform-declarations": "^5.1.2",
+        "tslint": "^5.12.1",
+        "typescript": "~2.8.2"
+    },
+    "dependencies": {},
+    "bootstrapper": "nativescript-plugin-seed"
+}
