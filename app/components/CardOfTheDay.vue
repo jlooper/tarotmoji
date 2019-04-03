@@ -90,6 +90,5 @@ export default {
   color: #323340;
   opacity: 0.5;
   font-size: 14;
-  margin-top: -30;
 }
 </style>
