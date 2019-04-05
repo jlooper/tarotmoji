@@ -26,7 +26,9 @@
 
 <script>
 import { Cards } from "../data/cards";
+import Tarot from "./tarot";
 export default {
+  mixins: [Tarot],
   data() {
     return {
       name: "",
@@ -41,39 +43,14 @@ export default {
   },
   computed: {
     shuffle() {
-      return Math.floor(Math.random() * Math.floor(2));
+      return Math.floor(Math.random() * 2);
     },
-    getRandomNumber() {
-      return Math.round(Math.random() * Math.floor(72));
-    }
-  },
-  methods: {
-    getMyCard() {
-      this.cards.forEach((card, index) => {
-        if (index == this.getRandomNumber) {
-          if (card.type != "major") {
-            this.major = false;
-            this.emoji1 = "~/assets/emoji/" + card.value + ".png";
-            this.emoji2 = "~/assets/emoji/" + card.suit + ".png";
-          } else {
-            this.major = true;
-            this.emoji = "~/assets/emoji/" + card.value + ".png";
-          }
-          this.name = card.name;
-          if (this.shuffle == 0) {
-            this.meaning = card.meaning_up;
-            this.icon = "emoji";
-          } else {
-            this.meaning = card.meaning_rev;
-            this.reversed = true;
-            this.icon = "emoji reversed";
-          }
-        }
-      });
+    randomNumber() {
+      return Math.round(Math.random() * 72);
     }
   },
   created() {
-    this.getMyCard();
+    this.getOneCard("", this.shuffle, this.randomNumber);
   }
 };
 </script>

@@ -1,7 +1,6 @@
 <template>
   <StackLayout>
     <Label row="0" text="My Reading" class="title med"/>
-
     <GridLayout rows="auto,1,*" columns="*" class="card">
       <GridLayout row="0" rows="*" columns="*,*,*">
         <Label col="0" :class="tabButtonClasses('Past')" text="PAST" @tap="getCard('Past')"/>
@@ -13,9 +12,7 @@
         />
         <Label col="2" :class="tabButtonClasses('Future')" text="FUTURE" @tap="getCard('Future')"/>
       </GridLayout>
-
       <StackLayout row="1" backgroundColor="#8089A8" style="opacity: .2"></StackLayout>
-
       <GridLayout row="2" rows="2*,3*,3*" class="card">
         <Label row="0" textWrap="true" class="card-title" :text="name"/>
         <Image row="1" v-if="major" :class="icon" :src="emoji"/>
@@ -38,10 +35,8 @@
 
 <script>
 import Tarot from "./tarot";
-
 export default {
   mixins: [Tarot],
-
   data() {
     return {
       currentTab: "Present"
@@ -57,8 +52,8 @@ export default {
   },
   methods: {
     getCard(context) {
-      let sNum = Math.floor(Math.random() * Math.floor(2));
-      let rNum = Math.round(Math.random() * Math.floor(72));
+      let sNum = Math.floor(Math.random() * 2);
+      let rNum = Math.round(Math.random() * 72);
       this.getOneCard(context, sNum, rNum);
     }
   },
