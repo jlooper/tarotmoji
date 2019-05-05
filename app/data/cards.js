@@ -834,7 +834,6 @@ export const Cards = [
     },
     {
         value: 'ace',
-        name: 'Ace of Swords',
         emoji: '🤚 🗡',
         value_int: 1,
         name: 'Ace of Swords',
