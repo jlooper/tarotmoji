@@ -38,7 +38,8 @@ export default {
       emoji2: "",
       icon: "emoji",
       cards: Cards,
-      major: true
+      major: true,
+      reversed: true
     };
   },
   computed: {
